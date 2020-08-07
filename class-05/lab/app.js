@@ -58,7 +58,6 @@ function sumAndMultiply(a, b, c) {
   var product = a * b * c;
   var stringsum = ` ${a} and ${b} and ${c}} sum to ${sum}`
   var stringprod = `The product of ${a} and ${b} and ${c} is ${product} `  //eslint-disable-line
-
 }
 testsumAndMultiply(4, 7, 5);
 
