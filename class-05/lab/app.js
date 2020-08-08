@@ -82,7 +82,6 @@ function sumArray(sumArr) {
   var sumOne = sum(sumArr[0], sumArr[1]);
   var sumTwo = sum(sumOne[0], sumArr[2]);
   var string = `${sumArr} was passed in as an array of numbers, and ${sumTwo[0]} is their sum.`;
-  console.log(string)
   return [sumTwo[0], string]
   //eslint-disable-line
 
@@ -103,12 +102,14 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
-
+function multiplyArray(multArr) { 
+  var prodOne = multiply(multArr[0], multArr[1]);
+  var prodTwo = multiply(prodOne[0], multArr[2]);
+  var string = `The numbers 2,3,4 have a product of 24.`;
+  return [prodTwo[0], string]
 }
-
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
