@@ -62,7 +62,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 /* Problem 4
 Write a function called sumArray() that takes in an array of numbers as its single argument and then returns an array where the first element is the sum of the numbers in the array, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
 
-"2,3,4 was passed in as an array of numbers, and 9 is their sum."
+"2,3,4 was passed in as an array of numbers, and 9 is their sum.""
 
 IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To do addition, use your sum() function that you've already created. You're going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator for string concatenation.
 
@@ -92,6 +92,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
+
 function multiplyArray(multArr) { //eslint-disable-line
 
 }
