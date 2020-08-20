@@ -18,7 +18,8 @@ var cookie = {
     var listItem = document.createElement('li');
 
     // give it conent
-    listItem.textContent = `name: ${this.name}`;
+    listItem.textContent = `name: ${this.name}, hair color: ${this.hairColor}, sheds: ${this.sheds}`;
+
 
     // append it to the DOM
     parent.appendChild(listItem);

@@ -1,17 +1,33 @@
 'use strict';
 
+
 // Cart constructor.
 var Cart = function(items) {
   // this.items is an array of CartItem instances.
   this.items = items;
 };
 
+Cart.prototype.render = function render(){
+  var parentItem = document.getElementById('items')
+  for (var i = 0; i < Cart.length; i++) {
+    var option = document.createElement('option');
+    option.setAttribute('value', Cart[i].name);
+    parentItem.appendChild(option);
+  }
+}
+
 Cart.prototype.addItem = function(product, quantity) {
+  this.items.push(new CartItem(product, quantity));
   // TODO: Fill in this instance method to create a new CartItem and add it to this.items
+  // this.product = product;
+  // this.quantity = quantity;
+  // this.items.push(this);
 };
 
 Cart.prototype.saveToLocalStorage = function() {
   // TODO: Fill in this instance method to save the contents of the cart to localStorage
+  var jsonItemArray = JSON.stringify(this);
+  localStorage.setItem('items', jsonItemArray);
 };
 
 Cart.prototype.removeItem = function(item) {
